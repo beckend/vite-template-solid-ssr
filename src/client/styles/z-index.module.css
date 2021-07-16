@@ -1,0 +1,15 @@
+.main {
+  z-index: 1000;
+}
+
+.header {
+  z-index: 1000;
+}
+
+.footer {
+  z-index: 1000;
+}
+
+.initialAppLoading {
+  z-index: 1100;
+}

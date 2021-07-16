@@ -1,0 +1,36 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.main {
+  composes: main from '../../styles/z-index.module.css';
+}
+
+.header {
+  composes: header from '../../styles/z-index.module.css';
+}
+
+.footer {
+  composes: footer from '../../styles/z-index.module.css';
+}
+
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(2);
+  opacity: 1;
+  transition: opacity 1500ms ease-out;
+  composes: initialAppLoading from '../../styles/z-index.module.css';
+}
+
+.overlayLoadingDone {
+  opacity: 0;
+}

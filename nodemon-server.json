@@ -1,0 +1,7 @@
+{
+  "delay": 100,
+  "watch": ["src"],
+  "ignore": ["src/**/*.spec.{ts,tsx}"],
+  "ext": "ts,tsx,mjs,js,json,graphql",
+  "exec": "ts-node ./src/server/index.tsx"
+}

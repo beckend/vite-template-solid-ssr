@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "importHelpers": true,
+    "allowSyntheticDefaultImports": false,
+    "esModuleInterop": false,
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "baseUrl": ".",
+    "types": ["vite/client"],
+    "paths": {
+      "$src": ["./src"],
+      "$src/*": ["./src/*"],
+      "$srcClient": ["./src/client"],
+      "$srcClient/*": ["./src/client/*"],
+      "$srcServer": ["./src/server"],
+      "$srcServer/*": ["./src/server/*"],
+      "$root": ["./"],
+      "$root/*": ["./*"]
+    },
+    "declaration": true,
+    "declarationDir": "./dist",
+    "outDir": "./dist/tsc-out"
+  },
+  "ts-node": {
+    "require": ["tsconfig-paths/register"],
+    "transpileOnly": true,
+    "transpiler": "ts-node/transpilers/swc-experimental"
+  },
+  "exclude": ["node_modules", "dist"]
+}

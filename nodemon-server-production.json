@@ -1,0 +1,6 @@
+{
+  "delay": 100,
+  "watch": ["dist"],
+  "ext": "ts,tsx,mjs,js,json,graphql,html,css,br,svg,png",
+  "exec": "npm run start"
+}

@@ -1,0 +1,7 @@
+node_modules
+dist
+build
+.envrc.local.sh
+package-lock.json
+internals/certificates
+tmp
